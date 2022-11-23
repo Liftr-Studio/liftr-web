@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundPage renders correctly 1`] = `
+<main
+  style={
+    {
+      "color": "#232129",
+      "fontFamily": "-apple-system, Roboto, sans-serif, serif",
+      "padding": "96px",
+    }
+  }
+>
+  <h1
+    style={
+      {
+        "marginBottom": 64,
+        "marginTop": 0,
+        "maxWidth": 320,
+      }
+    }
+  >
+    Page not found
+  </h1>
+  <p
+    style={
+      {
+        "marginBottom": 48,
+      }
+    }
+  >
+    Sorry 😔, we couldn’t find what you were looking for.
+    <br />
+    <br />
+    <a
+      href="/"
+    >
+      Go home
+    </a>
+    .
+  </p>
+</main>
+`;
