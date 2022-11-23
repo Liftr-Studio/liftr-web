@@ -1,13 +1,12 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import { render } from "@testing-library/react"
 
-import NotFoundPage from "./404"
+// You have to write data-testid
+const Title = () => <h1 data-testid="hero-title">Gatsby is awesome!</h1>
 
-describe("NotFoundPage", () => {
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(<NotFoundPage siteTitle="Default Starter" />)
-      .toJSON()
-    expect(tree).toMatchSnapshot()
-  })
+test("Displays the correct title", () => {
+  const { getByTestId } = render(<Title />)
+  // Assertion
+  expect(getByTestId("hero-title")).toHaveTextContent("Gatsby is awesome!")
+  // --> Test will pass
 })
