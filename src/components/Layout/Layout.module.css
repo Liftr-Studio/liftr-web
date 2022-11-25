@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap');
+
+:root {
+  --theme-colour-1: rgb(254, 82, 82);
+  --theme-colour-2: rgb(49, 55, 70);
+  --theme-colour-3: rgb(147, 198, 0);
+  --theme-colour-4: rgb(173, 202, 214);
+
+  --font-body: 'Assistant', sans-serif;
+
+  --font-weight-default: 600;
+  --font-weight-thin: 400;
+  --font-weight-x-thin: 300;
+  --font-weight-bold: 700;
+
+  --font-size-default: 16px;
+  --line-height-default: 1.625;
+
+  --font-size-normal: 1rem;
+  --line-height-normal: 1.625;
+
+  --font-size-large: 1.5rem;
+  --line-height-large: 1.333;
+
+  --font-size-x-large: 2rem;
+  --line-height-x-large: 1;
+
+  --font-size-2x-large: 3.75rem;
+  --line-height-2x-large: 1.233;
+
+  --font-size-3x-large: 6rem;
+  --line-height-3x-large: 1;
+}
+
+html,
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
+  font-weight: var(--font-weight-default);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1 { margin: 0 0 1rem; }
+h2 { margin: 0 0 0.75rem; }
