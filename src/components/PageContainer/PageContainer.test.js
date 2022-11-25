@@ -19,9 +19,9 @@ describe("PageContainer", () => {
         <PageContainer><div className="test">content</div></PageContainer>
       )
 
-      const elClassList = Object.values(container.firstChild.classList)
+      const elClassList = container.firstChild.classList
 
-      expect(elClassList.includes('pageContainer')).toBeTruthy()
+      expect(elClassList.contains('pageContainer')).toBeTruthy()
       expect(elClassList.length).toBe(1)
     })
   })
@@ -33,9 +33,9 @@ describe("PageContainer", () => {
           <PageContainer padding={false}><div className="test">content</div></PageContainer>
         )
 
-        const elClassList = Object.values(container.firstChild.classList)
+        const elClassList = container.firstChild.classList
 
-        expect(elClassList.includes('pageContainer')).toBeTruthy()
+        expect(elClassList.contains('pageContainer')).toBeTruthy()
         expect(elClassList.length).toBe(1)
       })
     })
@@ -46,9 +46,9 @@ describe("PageContainer", () => {
           <PageContainer padding><div className="test">content</div></PageContainer>
         )
 
-        const elClassList = Object.values(container.firstChild.classList)
+        const elClassList = container.firstChild.classList
 
-        expect(elClassList.includes('hasPadding')).toBeTruthy()
+        expect(elClassList.contains('hasPadding')).toBeTruthy()
       })
 
       test("does not have any other classes", () => {
@@ -56,7 +56,7 @@ describe("PageContainer", () => {
           <PageContainer padding><div className="test">content</div></PageContainer>
         )
 
-        const elClassList = Object.values(container.firstChild.classList)
+        const elClassList = container.firstChild.classList
 
         expect(elClassList.length).toBe(2)
       })
@@ -68,9 +68,9 @@ describe("PageContainer", () => {
           <PageContainer padding="onlyLargeScreens"><div className="test">content</div></PageContainer>
         )
 
-        const elClassList = Object.values(container.firstChild.classList)
+        const elClassList = container.firstChild.classList
 
-        expect(elClassList.includes('hasOnlyLargeScreensPadding')).toBeTruthy()
+        expect(elClassList.contains('hasOnlyLargeScreensPadding')).toBeTruthy()
       })
 
       test("does not have any other classes", () => {
@@ -78,7 +78,7 @@ describe("PageContainer", () => {
           <PageContainer padding><div className="test">content</div></PageContainer>
         )
 
-        const elClassList = Object.values(container.firstChild.classList)
+        const elClassList = container.firstChild.classList
 
         expect(elClassList.length).toBe(2)
       })
