@@ -1,5 +1,6 @@
 module.exports = {
   transform: {
+    ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform",
     "^.+\\.jsx?$": `<rootDir>/jest-preprocess.js`,
   },
   moduleNameMapper: {
