@@ -1,0 +1,21 @@
+.letterList {
+  list-style-type: lower-alpha;
+}
+
+.romanNumeralsList {
+  list-style-type: lower-roman;
+}
+
+.table,
+.table tr,
+.table th,
+.table td {
+  border: 1px solid rgb(0,0,0);
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 0.25rem;
+}
