@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Layout } from "../components/Layout"
-import * as styles from './privacy-policy.module.css'
+import { letterList, romanNumeralsList, table } from './privacy-policy.module.css'
 
 
 const PrivacyPolicy = () => {
@@ -69,7 +69,7 @@ const PrivacyPolicy = () => {
 
       <p>You can get hold of us in any of the following ways:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li>by e-mailing us at dataprotection(at)liftr(dot)studio; or</li>
         <li>by writing to us at LIFTR LIMITED, 71-75 Shelton Street, London, WC2H 9JQ.</li>
       </ol>
@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
 
       <p>2.1 Set out below are the general categories and in each case the types of personal information which we collect, use and hold about you:</p>
 
-      <table className={styles.table}>
+      <table className={table}>
         <thead>
           <tr>
             <th>General Category</th>
@@ -148,7 +148,7 @@ const PrivacyPolicy = () => {
 
       <p>3.1 Special information is explained in section 1 above. We do not, and never will collect any special information about you such as:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li>race;</li>
         <li>ethnic origin;</li>
         <li>politics;</li>
@@ -167,7 +167,7 @@ const PrivacyPolicy = () => {
 
       <p>4.1 We are only able to use your personal information for certain legal reasons set out in data protection law. There are legal reasons under data protection law other than those listed below, but in most cases, we will use your personal information for the following legal reasons:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li><strong>Contract Reason:</strong> this is in order to perform our obligations to you under a contract we have entered into with you;</li>
         <li><strong>Legitimate Interests Reason:</strong> this is where the use of your personal information is necessary for our (or a third party’s) legitimate interests, so long as that legitimate interest does not override your fundamental rights, freedoms or interests.</li>
         <li><strong>Legal Obligation Reason:</strong> this is where we have to use your personal information in order to perform a legal obligation by which we are bound; and</li>
@@ -182,12 +182,12 @@ const PrivacyPolicy = () => {
 
       <p>4.5 We have explained below the different purposes for which we use your personal information and, in each case, the legal reason(s) allowing us to use your personal information. Please also note the following:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li>if we use the Legitimate Interests Reason as the legal reason for which we can use your personal information, we have also explained what that legitimate interest is; and</li>
         <li>for some of the purposes we may have listed more than one legal reason on which we can use your personal information, because the legal reason may be different in different circumstances. If you need confirmation of the specific legal reason that we are relying on to use your personal data for that purpose, please contact us using the contact details set out at the start of this privacy notice.</li>
       </ol>
 
-      <table className={styles.table}>
+      <table className={table}>
         <thead>
           <tr>
             <th>Purpose</th>
@@ -260,7 +260,7 @@ const PrivacyPolicy = () => {
 
       <p>5.2 We may receive some of your personal information from third parties or publicly available sources. This includes:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li>Identity Information and Contact Information from selected data brokers such as partners or investors.</li>
         <li>Identity Information and Contact Information from publicly available sources such as Companies House;</li>
         <li>Website, Device and Technical Information from third parties such as analytics providers (like Google);</li>
@@ -273,11 +273,11 @@ const PrivacyPolicy = () => {
 
       <p>6.1 We may need to share your personal information with other organisations or people. These organisations include:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li>Other companies in our group (who may might act as joint data controllers or as data processors on our behalf) and who provide part or all of the services we are providing to you, or you have requested us to provide to you.</li>
         <li>
           Third parties who are not part of our group. These may include:
-          <ol className={styles.romanNumeralsList}>
+          <ol className={romanNumeralsList}>
             <li>Suppliers of services that we are using for a Contract Reason or Legitimate Interest Reason in order to supply you with the services you require (such as other software development firms we may subcontract with)</li>
             <li>Government bodies and regulatory bodies: such as HMRC, fraud prevention agencies or other UK or EU law enforcement agencies;</li>
             <li>Our advisors: such as lawyers, accountants, auditors, insurance companies who are based in the UK or the EU.</li>
@@ -299,7 +299,7 @@ const PrivacyPolicy = () => {
 
       <p>7.1 The safeguards set out in data protection laws for transferring personal information outside of the EEA include:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li>where the transfer is to a country or territory which the EU Commission has approved as ensuring an adequate level of protection;</li>
         <li>where personal information is transferred to another organisation within our group, under an agreement covering this situation which is known as “binding corporate rules”;</li>
         <li>having in place a standard set of clauses which have been approved by the EU Commission;</li>
@@ -329,7 +329,7 @@ const PrivacyPolicy = () => {
 
       <p>10.1 Under data protection laws you have certain rights in relation to your personal information, as follows:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li><strong>Right to request access:</strong> (this is often called ‘subject access’). This is the right to obtain from us a copy of the personal information which we hold about you. We must also provide you with certain other information in response to these requests to help you understand how your personal information is being used.</li>
         <li><strong>Right to correction:</strong> this is the right to request that any incorrect personal data is corrected and that any incomplete personal data is completed.</li>
         <li><strong>Right to erasure:</strong> (this is often called the “right to be forgotten”). This right only applies in certain circumstances. Where it does apply, you have the right to request us to erase all of your personal information.</li>
@@ -342,7 +342,7 @@ const PrivacyPolicy = () => {
 
       <p>10.3 If you want to exercise any of the above rights in relation to your personal information, please contact us using the details set out at the beginning of this notice. If you do make a request then please note:</p>
 
-      <ol className={styles.letterList}>
+      <ol className={letterList}>
         <li>we may need certain information from you so that we can verify your identity;</li>
         <li>we do not charge a fee for exercising your rights unless your request is unfounded or excessive; and</li>
         <li>if your request is unfounded or excessive then we may refuse to deal with your request.</li>
