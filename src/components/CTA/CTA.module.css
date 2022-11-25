@@ -1,0 +1,32 @@
+.cta {
+  --padding-vertical: 1rem;
+  display: inline-block;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: var(--padding-vertical) 2rem;
+  margin-bottom: 1rem;
+  line-height: var(--font-size-normal);
+  font-size: var(--font-size-normal);
+  border-radius: calc(var(--padding-vertical) * 2 + var(--font-size-normal));
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.iconWrapper {
+  margin-left: 1.5rem;
+}
+
+.ctaPrimary {
+  background-color: var(--theme-colour-5);
+  color: var(--theme-colour-2);
+  transition: all 200ms ease;
+}
+
+.ctaPrimary:hover {
+  background-color: var(--theme-colour-6);
+}
