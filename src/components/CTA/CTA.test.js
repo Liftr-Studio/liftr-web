@@ -56,7 +56,7 @@ describe("CTA", () => {
         <CTA to="/test">Click Me!</CTA>
       )
 
-      const icon = container.getElementsByClassName("icon")
+      const icon = container.getElementsByClassName("iconWrapper")
       expect(icon.length).toBe(0)
     })
   })
@@ -68,7 +68,7 @@ describe("CTA", () => {
         <CTA to="/test" hasArrowIcon={false}>Click Me!</CTA>
       )
 
-      const icon = container.getElementsByClassName("icon")
+      const icon = container.getElementsByClassName("iconWrapper")
       expect(icon.length).toBe(0)
     })
   })
@@ -79,7 +79,7 @@ describe("CTA", () => {
         <CTA to="/test" hasArrowIcon>Click Me!</CTA>
       )
 
-      const icon = container.getElementsByClassName("icon")
+      const icon = container.getElementsByClassName("iconWrapper")
       expect(icon.length).toBe(1)
     })
   })

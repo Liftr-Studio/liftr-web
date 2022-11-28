@@ -2,7 +2,13 @@ import * as React from "react"
 import PropTypes from 'prop-types';
 import classNames from "classnames";
 import { Link } from "gatsby"
-import { cta, ctaPrimary, ctaSecondary, contentWrapper, content, icon, iconWrapper } from "./CTA.module.css"
+import {
+  cta,
+  ctaPrimary,
+  ctaSecondary,
+  contentWrapper,
+  iconWrapper
+} from "./CTA.module.css"
 
 const CTA = ({ children, importance, to, hasArrowIcon }) => {
   const classes = classNames(
@@ -15,14 +21,14 @@ const CTA = ({ children, importance, to, hasArrowIcon }) => {
   return (
     <Link className={classes} to={to}>
       <span className={contentWrapper}>
-        <span className={content}>
+        <span>
           {children}
         </span>
 
         {
           hasArrowIcon && (
             <span className={iconWrapper}>
-              <svg className={icon} width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.08301 11L20.9163 11" stroke="#FE5252" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M11 1.08301L20.9167 10.9997L11 20.9163" stroke="#FE5252" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>

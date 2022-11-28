@@ -10,6 +10,7 @@
   line-height: var(--font-size-normal);
   font-size: var(--font-size-normal);
   border-radius: calc(var(--padding-vertical) * 2 + var(--font-size-normal));
+  text-decoration: none;
 }
 
 .contentWrapper {
@@ -19,6 +20,12 @@
 
 .iconWrapper {
   margin-left: 1.5rem;
+  width: 1.5rem;
+}
+
+.iconWrapper > svg {
+  display: block;
+  width: 100%;
 }
 
 .ctaPrimary {
@@ -29,4 +36,8 @@
 
 .ctaPrimary:hover {
   background-color: var(--theme-colour-6);
+}
+
+.ctaSecondary {
+
 }
