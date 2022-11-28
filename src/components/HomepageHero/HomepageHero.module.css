@@ -1,0 +1,115 @@
+:root {
+  --homepageHero-star-size-bigScreens: 9rem;
+  --homepageHero-star-size-smallScreens: 6rem;
+}
+
+.wrapper {
+  background: rgb(0, 34, 119);
+  color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+}
+
+.innerWrapper {
+  position: relative;
+  padding-top: 11.25rem;
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-size: var(--font-size-2x-large);
+  line-height: var(--line-height-2x-large);
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.subtext {
+  margin: 0 0 2rem;
+}
+
+.star {
+  width: var(--homepageHero-star-size-bigScreens);
+  height: var(--homepageHero-star-size-bigScreens);
+  position: absolute;
+  bottom: calc(var(--homepageHero-star-size-bigScreens) / 2);
+}
+
+.star::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  box-shadow: 0 0 4rem 3.5rem var(--theme-colour-1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-0.25rem) translateY(-0.25rem);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.starBlue,
+.starWhite {
+  display: block;
+  width: var(--homepageHero-star-size-bigScreens);
+  height:var(--homepageHero-star-size-bigScreens);
+  z-index: 2;
+  position: relative;
+}
+
+.starCut {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: var(--homepageHero-star-size-bigScreens);
+  height: calc(var(--homepageHero-star-size-bigScreens) / 2);
+  top: 100%;
+  z-index: 2;
+}
+
+@media (max-width: 559px) {
+  .innerWrapper {
+    text-align: center;
+    padding-top: 12.5rem;
+    padding-bottom: 14.5rem;
+  }
+
+  .star {
+    width: var(--homepageHero-star-size-smallScreens);
+    height: var(--homepageHero-star-size-smallScreens);
+    bottom: calc(var(--homepageHero-star-size-smallScreens) / 2);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .starBlue,
+  .starWhite {
+    width: var(--homepageHero-star-size-smallScreens);
+    height:var(--homepageHero-star-size-smallScreens);
+  }
+
+  .starCut {
+    width: var(--homepageHero-star-size-smallScreens);
+    height: calc(var(--homepageHero-star-size-smallScreens) / 2);
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .content {
+    max-width: 60%;
+  }
+
+  .star::before {
+    box-shadow: 0 0 5.5rem 5rem var(--theme-colour-1);
+  }
+
+  .star {
+    right: 5vw;
+  }
+
+  .title {
+    font-size: var(--font-size-3x-large);
+    line-height: var(--line-height-3x-large);
+    margin-bottom: 2rem;
+  }
+}
