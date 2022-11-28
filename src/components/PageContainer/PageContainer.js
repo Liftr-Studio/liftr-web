@@ -8,13 +8,14 @@ import {
   hasPadding,
 } from "./PageContainer.module.css"
 
-const PageContainer = ({ children, padding }) => {
+const PageContainer = ({ children, extraClass, padding }) => {
   const classes = classNames(
     pageContainer,
     {
       [ hasPadding ]: padding === true,
       [ hasOnlyLargeScreensPadding ]: padding === "onlyLargeScreens",
-    }
+    },
+    extraClass
   )
 
   return (
@@ -29,7 +30,9 @@ PageContainer.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.element,
+    PropTypes.string,
   ]).isRequired,
+  extraClass: PropTypes.string,
   padding: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.oneOf(["onlyLargeScreens"])
@@ -37,7 +40,8 @@ PageContainer.propTypes = {
 }
 
 PageContainer.defaultProps = {
-  padding: false,
+  extraClass: null,
+  padding: true,
 }
 
 export { PageContainer }

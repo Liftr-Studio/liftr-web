@@ -14,15 +14,15 @@ describe("PageContainer", () => {
   })
 
   describe("when no padding prop is passed", () => {
-    test("does not have any classes related to padding", () => {
+    test("has the default hasPadding class", () => {
       const { container } = render(
         <PageContainer><div className="test">content</div></PageContainer>
       )
 
       const elClassList = container.firstChild.classList
 
-      expect(elClassList.contains('pageContainer')).toBeTruthy()
-      expect(elClassList.length).toBe(1)
+      expect(elClassList.contains('hasPadding')).toBeTruthy()
+      expect(elClassList.length).toBe(2)
     })
   })
 
@@ -82,6 +82,41 @@ describe("PageContainer", () => {
 
         expect(elClassList.length).toBe(2)
       })
+    })
+  })
+
+  describe("when no extraClass prop is passed", () => {
+    test("does not have any classes extra classes", () => {
+      const { container } = render(
+        <PageContainer><div className="test">content</div></PageContainer>
+      )
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('pageContainer')).toBeTruthy()
+      expect(elClassList.length).toBe(2)
+    })
+  })
+
+  describe("when the extraClass prop is passed", () => {
+    test("adds the extra class on the wrapper", () => {
+      const { container } = render(
+        <PageContainer extraClass="extraCustomClass"><div className="test">content</div></PageContainer>
+      )
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('extraCustomClass')).toBeTruthy()
+    })
+
+    test("keeps the original class on the wrapper", () => {
+      const { container } = render(
+        <PageContainer extraClass="extraCustomClass"><div className="test">content</div></PageContainer>
+      )
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('pageContainer')).toBeTruthy()
     })
   })
 })

@@ -2,3 +2,12 @@
   margin: 0 auto;
   max-width: 80rem;
 }
+
+.hasPadding {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.hasOnlyLargeScreensPadding {
+
+}
