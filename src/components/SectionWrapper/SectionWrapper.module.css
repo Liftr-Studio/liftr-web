@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    padding: 5rem 0;
+  }
+}
+
+.isCentered {
+  text-align: center;
+}
+
+.alternativeFont {
+  font-weight: var(--font-weight-x-thin);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+}
