@@ -11,6 +11,7 @@
   font-size: var(--font-size-normal);
   border-radius: calc(var(--padding-vertical) * 2 + var(--font-size-normal));
   text-decoration: none;
+  color: var(--theme-colour-2)!important;
 }
 
 .contentWrapper {
