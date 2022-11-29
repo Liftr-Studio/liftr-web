@@ -10,6 +10,7 @@ import {
   logo,
   nav,
   navItem,
+  navItemActive,
   themeDark,
   wrapper,
 } from "./Header.module.css"
@@ -28,9 +29,9 @@ const Header = ({ overlap, theme }) => {
           <img src={theme === "dark" ? liftrLogoWhite : liftrLogoDark} alt="liftr" />
         </Link>
         <nav className={nav}>
-          <Link to="/" className={navItem}>About us</Link>
-          <Link to="/" className={navItem}>Careers</Link>
-          <Link to="/" className={navItem}>Get in touch</Link>
+          <Link to="/" className={navItem} activeClassName={navItemActive}>About us</Link>
+          <Link to="/abc" className={navItem} activeClassName={navItemActive}>Careers</Link>
+          <Link to="/def" className={navItem} activeClassName={navItemActive}>Get in touch</Link>
         </nav>
       </PageContainer>
     </header>
