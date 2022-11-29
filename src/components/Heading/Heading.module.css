@@ -18,6 +18,14 @@
   margin-bottom: 1.5rem;
 }
 
+
+.theme3 {
+  font-size: var(--font-size-x-large);
+  line-height: var(--line-height-x-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 560px) {
   .theme1 {
     font-size: var(--font-size-3x-large);
