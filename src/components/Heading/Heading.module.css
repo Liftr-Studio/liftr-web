@@ -1,0 +1,28 @@
+.heading {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.theme1 {
+  font-size: var(--font-size-2x-large);
+  line-height: var(--line-height-2x-large);
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.theme2 {
+  font-size: var(--font-size-2x-large);
+  line-height: var(--line-height-2x-large);
+  font-weight: var(--font-weight-x-thin);
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 560px) {
+  .theme1 {
+    font-size: var(--font-size-3x-large);
+    line-height: var(--line-height-3x-large);
+    margin-bottom: 2rem;
+  }
+}
+
