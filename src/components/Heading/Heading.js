@@ -10,7 +10,7 @@ import {
   theme4,
 } from "./Heading.module.css"
 
-const Heading = ({ children, importance, isCenter, theme }) => {
+const Heading = ({ children, extraClass, importance, isCenter, theme }) => {
   const classes = classNames(
     heading,
     {
@@ -19,19 +19,22 @@ const Heading = ({ children, importance, isCenter, theme }) => {
       [theme3]: theme === 3,
       [theme4]: theme === 4,
       [isCentered]: isCenter === true,
-    }
+    },
+    extraClass,
   )
   return React.createElement(`h${importance}`, { className: classes, children })
 }
 
 Heading.propTypes = {
   children: PropTypes.string.isRequired,
+  extraClass: PropTypes.string,
   importance: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
   isCenter: PropTypes.bool,
   theme: PropTypes.oneOf([1, 2, 3, 4]).isRequired,
 }
 
 Heading.defaultProps = {
+  extraClass: null,
   importance: 1,
   isCenter: false,
 }

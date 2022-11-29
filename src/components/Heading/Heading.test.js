@@ -56,5 +56,35 @@ describe("Heading", () => {
       expect(elClassList.contains('isCentered')).toBeTruthy()
     })
   })
+
+  describe("when no extraClass prop is passed", () => {
+    test("does not have any classes extra classes", () => {
+      const { container } = render(<Heading theme={1}>abc</Heading>)
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('heading')).toBeTruthy()
+      expect(elClassList.length).toBe(2)
+    })
+  })
+
+  describe("when the extraClass prop is passed", () => {
+    test("adds the extra class on the wrapper", () => {
+      const { container } = render(<Heading theme={1} extraClass="extraCustomClass">abc</Heading>)
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('extraCustomClass')).toBeTruthy()
+    })
+
+    test("keeps the original class on the wrapper", () => {
+      const { container } = render(<Heading theme={1} extraClass="extraCustomClass">abc</Heading>)
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('heading')).toBeTruthy()
+    })
+  })
+
 })
 
