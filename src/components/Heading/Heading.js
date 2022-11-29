@@ -7,6 +7,7 @@ import {
   theme1,
   theme2,
   theme3,
+  theme4,
 } from "./Heading.module.css"
 
 const Heading = ({ children, importance, isCenter, theme }) => {
@@ -16,6 +17,7 @@ const Heading = ({ children, importance, isCenter, theme }) => {
       [theme1]: theme === 1,
       [theme2]: theme === 2,
       [theme3]: theme === 3,
+      [theme4]: theme === 4,
       [isCentered]: isCenter === true,
     }
   )
@@ -26,7 +28,7 @@ Heading.propTypes = {
   children: PropTypes.string.isRequired,
   importance: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
   isCenter: PropTypes.bool,
-  theme: PropTypes.oneOf([1, 2, 3]).isRequired,
+  theme: PropTypes.oneOf([1, 2, 3, 4]).isRequired,
 }
 
 Heading.defaultProps = {

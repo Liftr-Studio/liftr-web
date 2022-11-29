@@ -18,12 +18,19 @@
   margin-bottom: 1.5rem;
 }
 
-
 .theme3 {
   font-size: var(--font-size-x-large);
   line-height: var(--line-height-x-large);
   font-weight: var(--font-weight-bold);
   margin-bottom: 2rem;
+}
+
+.theme4 {
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-x-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 560px) {
