@@ -36,5 +36,25 @@ describe("Heading", () => {
       expect(container.firstChild.classList.contains("theme1")).toBeTruthy()
     })
   })
+
+  describe("when the isCenter prop is false", () => {
+    test("does not have the isCentered class on it", () => {
+      const { container } = render(<Heading theme={1} isCenter={false}>abc</Heading>)
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('isCentered')).toBeFalsy()
+    })
+  })
+
+  describe("when the isCenter prop is true", () => {
+    test("has the isCentered class on it", () => {
+      const { container } = render(<Heading theme={1} isCenter>abc</Heading>)
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('isCentered')).toBeTruthy()
+    })
+  })
 })
 
