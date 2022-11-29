@@ -119,4 +119,28 @@ describe("PageContainer", () => {
       expect(elClassList.contains('pageContainer')).toBeTruthy()
     })
   })
+
+  describe("when the isNarrow prop is false", () => {
+    test("does not have the forceNarrowContent class on it", () => {
+      const { container } = render(
+        <PageContainer isNarrow={false}><div className="test">content</div></PageContainer>
+      )
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('forceNarrowContent')).toBeFalsy()
+    })
+  })
+
+  describe("when the isNarrow prop is true", () => {
+    test("has the forceNarrowContent class on it", () => {
+      const { container } = render(
+        <PageContainer isNarrow><div className="test">content</div></PageContainer>
+      )
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('forceNarrowContent')).toBeTruthy()
+    })
+  })
 })

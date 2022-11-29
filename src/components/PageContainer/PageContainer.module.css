@@ -11,3 +11,7 @@
 .hasOnlyLargeScreensPadding {
 
 }
+
+.forceNarrowContent {
+  max-width: 52rem;
+}

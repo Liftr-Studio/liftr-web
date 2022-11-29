@@ -3,15 +3,17 @@ import PropTypes from 'prop-types';
 import classNames from "classnames";
 import "normalize.css"
 import {
-  pageContainer,
+  forceNarrowContent,
   hasOnlyLargeScreensPadding,
   hasPadding,
+  pageContainer,
 } from "./PageContainer.module.css"
 
-const PageContainer = ({ children, extraClass, padding }) => {
+const PageContainer = ({ children, extraClass, isNarrow, padding }) => {
   const classes = classNames(
     pageContainer,
     {
+      [ forceNarrowContent ]: isNarrow === true,
       [ hasPadding ]: padding === true,
       [ hasOnlyLargeScreensPadding ]: padding === "onlyLargeScreens",
     },
@@ -33,6 +35,7 @@ PageContainer.propTypes = {
     PropTypes.string,
   ]).isRequired,
   extraClass: PropTypes.string,
+  isNarrow: PropTypes.bool,
   padding: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.oneOf(["onlyLargeScreens"])
@@ -41,6 +44,7 @@ PageContainer.propTypes = {
 
 PageContainer.defaultProps = {
   extraClass: null,
+  isNarrow: false,
   padding: true,
 }
 
