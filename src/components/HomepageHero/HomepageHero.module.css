@@ -16,13 +16,6 @@
   padding-bottom: 4rem;
 }
 
-.title {
-  font-size: var(--font-size-2x-large);
-  line-height: var(--line-height-2x-large);
-  padding: 0;
-  margin: 0 0 1rem;
-}
-
 .subtext {
   margin: 0 0 2rem;
 }
@@ -105,11 +98,5 @@
 
   .star {
     right: 5vw;
-  }
-
-  .title {
-    font-size: var(--font-size-3x-large);
-    line-height: var(--line-height-3x-large);
-    margin-bottom: 2rem;
   }
 }

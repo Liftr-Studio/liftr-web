@@ -7,11 +7,11 @@ import {
   starWhite,
   starCut,
   subtext,
-  title,
   wrapper
 } from "./HomepageHero.module.css"
 import { PageContainer } from "../PageContainer";
 import { CTA } from "../CTA";
+import { Heading } from "../Heading/Heading";
 import liftrStarLightBlue from "../../images/liftr-star-light-blue.svg"
 import liftrStarWhite from "../../images/liftr-star-white.svg"
 
@@ -19,7 +19,7 @@ const HomepageHero = () => (
   <section className={wrapper}>
     <PageContainer extraClass={innerWrapper}>
       <div className={content}>
-        <h1 className={title}>Launch sensational products</h1>
+        <Heading theme={1} importance={1}>Launch sensational products</Heading>
         <p className={subtext}>We build high performance cross functional product, engineering and design teams for venture backed startups in e-commerce and financial services.</p>
         <CTA to="/contact" hasArrowIcon>Ship products faster</CTA>
       </div>
