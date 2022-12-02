@@ -1,0 +1,45 @@
+.card1 {
+  background: var(--theme-colour-1);
+  font-weight: var(--font-weight-x-thin);
+  color: var(--theme-colour-2);
+}
+
+.headingLabelCard1 {
+  color: var(--theme-colour-2);
+}
+
+.headingCard1 {
+  color: rgb(255,255,255);
+}
+
+.card1 a {
+  color: rgb(255,255,255);
+}
+
+.card2 {
+  background: var(--theme-colour-2);
+  font-weight: var(--font-weight-x-thin);
+  color: rgb(255,255,255);
+}
+
+.headingLabelCard2 {
+  color: var(--theme-colour-1);
+}
+
+@media screen and (min-width: 768px) {
+  .cardsWrapper,
+  .cardWrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .cardsWrapper {
+    flex: 1 1 0;
+    justify-content: space-between;
+  }
+
+  .cardWrapper {
+    width: calc(50% - 0.15rem);
+  }
+}
+
