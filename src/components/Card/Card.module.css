@@ -1,0 +1,11 @@
+.wrapper {
+  padding: 1.75rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
