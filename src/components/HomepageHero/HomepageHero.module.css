@@ -8,6 +8,7 @@
   color: rgb(255, 255, 255);
   position: relative;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .innerWrapper {
