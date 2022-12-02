@@ -30,7 +30,7 @@ const Header = ({ overlap, theme }) => {
         </Link>
         <nav className={nav}>
           <Link to="/" className={navItem} activeClassName={navItemActive}>About us</Link>
-          <Link to="/abc" className={navItem} activeClassName={navItemActive}>Careers</Link>
+          <Link to="/careers" className={navItem} activeClassName={navItemActive}>Careers</Link>
           <Link to="/def" className={navItem} activeClassName={navItemActive}>Get in touch</Link>
         </nav>
       </PageContainer>
