@@ -33,6 +33,14 @@
   text-transform: uppercase;
 }
 
+
+.theme5 {
+  font-size: var(--font-size-x-large);
+  line-height: var(--line-height-large);
+  font-weight: var(--font-weight-thin);
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 560px) {
   .theme1 {
     font-size: var(--font-size-3x-large);
