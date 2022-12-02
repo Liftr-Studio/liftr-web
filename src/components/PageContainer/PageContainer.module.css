@@ -1,15 +1,22 @@
+:root {
+  --page-container-padding: 5vw;
+}
+
 .pageContainer {
   margin: 0 auto;
   max-width: 80rem;
 }
 
 .hasPadding {
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: var(--page-container-padding);
+  padding-right: var(--page-container-padding);
 }
 
-.hasOnlyLargeScreensPadding {
-
+@media screen and (min-width: 768px) {
+  .hasOnlyLargeScreensPadding {
+    padding-left: var(--page-container-padding);
+    padding-right: var(--page-container-padding);
+  }
 }
 
 .forceNarrowContent {
