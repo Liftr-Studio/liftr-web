@@ -22,6 +22,20 @@ const CareersPage = () => {
           <p>We are setting up our first development centre in Romania. We are a remote first company but, occasionally, we meet IRL in the Cluj area to celebrate success, plan ahead and build a sense of community.</p>
         </SectionWrapper>
       </PageContainer>
+
+      <PageContainer isNarrow>
+        <SectionWrapper hasAlternativeFont>
+          <Heading theme={3}>Benefits</Heading>
+          <ul className={utilityCustomUL}>
+            <li>We are a remote first company</li>
+            <li>Holiday: 23 days per year + 1 extra day for each year of tenure (up to a max of 28)</li>
+            <li>Participation in our attractive bonus scheme which rewards contribution and commitment</li>
+            <li>Comprehensive private health insurance</li>
+            <li>Training and development expenses up to 700 EUR per person per year</li>
+            <li>14" Macbook Pro or equivalent and home set up gear</li>
+          </ul>
+        </SectionWrapper>
+      </PageContainer>
     </Layout>
   )
 }
