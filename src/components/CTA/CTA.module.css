@@ -40,5 +40,10 @@
 }
 
 .ctaSecondary {
+  border: 1px solid var(--theme-colour-1);
+  transition: border-color 200ms ease;
+}
 
+.ctaSecondary:hover {
+  border-color: var(--theme-colour-2);
 }
