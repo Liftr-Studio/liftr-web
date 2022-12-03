@@ -6,6 +6,10 @@
   list-style-type: lower-roman;
 }
 
+.table {
+  margin-bottom: 1.5rem;
+}
+
 .table,
 .table tr,
 .table th,
