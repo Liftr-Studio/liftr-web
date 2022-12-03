@@ -3,6 +3,7 @@ import "normalize.css"
 import PropTypes from 'prop-types';
 import { CTA } from "../CTA"
 import { Header } from "../Header";
+import { Footer } from "../Footer";
 import { Heading } from "../Heading"
 import { PageContainer } from "../PageContainer"
 import { SectionWrapper } from "../SectionWrapper"
@@ -19,6 +20,8 @@ const Layout = ({ children, headerDarkTheme, headerIsOverlapping }) => (
         <CTA to="/" hasArrowIcon>Ship products faster</CTA>
       </SectionWrapper>
     </PageContainer>
+
+    <Footer />
   </div>
 )
 

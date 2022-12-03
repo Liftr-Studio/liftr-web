@@ -32,6 +32,9 @@
 
   --font-size-3x-large: 6rem;
   --line-height-3x-large: 1;
+
+  --font-size-emphasis: 1.25rem;
+  --line-height-emphasis: 1.6;
 }
 
 html,
