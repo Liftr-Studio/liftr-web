@@ -6,6 +6,7 @@ import { PageContainer } from "../components/PageContainer"
 import { SectionWrapper } from "../components/SectionWrapper"
 import { LaunchWhatMatters } from "../components/LaunchWhatMatters/LaunchWhatMatters"
 import { CompanyValuesCulture } from "../components/CompanyValuesCulture"
+import { WhatsInItForYou } from "../components/WhatsInItForYou/WhatsInItForYou"
 import {
   utilityCustomUL,
 } from "../components/Layout/Layout.module.css"
@@ -18,6 +19,7 @@ const CareersPage = () => {
   return (
     <Layout>
       <LaunchWhatMatters />
+      <WhatsInItForYou />
       <CompanyValuesCulture />
       <PageContainer>
         <SectionWrapper hasAlternativeFont isCenter>
