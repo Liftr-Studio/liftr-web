@@ -41,6 +41,22 @@
   margin-bottom: 2rem;
 }
 
+.theme6,
+.theme7 {
+  font-size: var(--font-size-2x-large);
+  line-height: var(--line-height-2x-large);
+}
+
+.theme6 {
+  font-weight: var(--font-weight-x-thin);
+}
+
+.theme7 {
+  font-weight: var(--font-weight-bold);
+  color: var(--theme-colour-1);
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 560px) {
   .theme1 {
     font-size: var(--font-size-3x-large);

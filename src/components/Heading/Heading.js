@@ -9,6 +9,8 @@ import {
   theme3,
   theme4,
   theme5,
+  theme6,
+  theme7,
 } from "./Heading.module.css"
 
 const Heading = ({ children, extraClass, importance, isCenter, theme }) => {
@@ -20,6 +22,8 @@ const Heading = ({ children, extraClass, importance, isCenter, theme }) => {
       [theme3]: theme === 3,
       [theme4]: theme === 4,
       [theme5]: theme === 5,
+      [theme6]: theme === 6,
+      [theme7]: theme === 7,
       [isCentered]: isCenter === true,
     },
     extraClass,
