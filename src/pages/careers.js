@@ -4,6 +4,7 @@ import { Heading } from "../components/Heading"
 import { Layout } from "../components/Layout"
 import { PageContainer } from "../components/PageContainer"
 import { SectionWrapper } from "../components/SectionWrapper"
+import { LaunchWhatMatters } from "../components/LaunchWhatMatters/LaunchWhatMatters"
 import {
   utilityCustomUL,
 } from "../components/Layout/Layout.module.css"
@@ -15,6 +16,7 @@ import {
 const CareersPage = () => {
   return (
     <Layout>
+      <LaunchWhatMatters />
       <PageContainer>
         <SectionWrapper hasAlternativeFont isCenter>
           <Heading theme={2} extraClass={headingLifeAtLiftr}>Life @Liftr</Heading>

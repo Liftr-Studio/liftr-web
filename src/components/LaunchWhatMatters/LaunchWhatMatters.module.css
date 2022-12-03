@@ -1,0 +1,42 @@
+.tinyStar {
+  display: block;
+  width: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  display: block;
+  background-image: url(../../images/launch-what-matters-small.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 799px) {
+  .wrapper::before {
+    padding-top: 53%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    width: 50%;
+    padding-right: 4rem;
+  }
+
+  .wrapper::before {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url(../../images/launch-what-matters-large.jpg);
+    background-size: auto 100%;
+    background-position: top left;
+  }
+}
