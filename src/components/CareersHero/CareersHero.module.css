@@ -1,0 +1,24 @@
+.wrapper {
+  padding-top: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.content {
+  text-align: center;
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+.subtext {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    margin-bottom: 6.5rem;
+  }
+
+  .subtext {
+    margin-bottom: 4rem;
+  }
+}

@@ -4,6 +4,7 @@ import { Heading } from "../components/Heading"
 import { Layout } from "../components/Layout"
 import { PageContainer } from "../components/PageContainer"
 import { SectionWrapper } from "../components/SectionWrapper"
+import { CareersHero } from "../components/CareersHero/CareersHero"
 import { LaunchWhatMatters } from "../components/LaunchWhatMatters/LaunchWhatMatters"
 import { CompanyValuesCulture } from "../components/CompanyValuesCulture"
 import { WhatsInItForYou } from "../components/WhatsInItForYou/WhatsInItForYou"
@@ -18,6 +19,7 @@ import {
 const CareersPage = () => {
   return (
     <Layout>
+      <CareersHero />
       <LaunchWhatMatters />
       <WhatsInItForYou />
       <CompanyValuesCulture />
