@@ -1,4 +1,3 @@
-import classNames from "classnames"
 import * as React from "react"
 import { CTA } from "../components/CTA"
 import { Heading } from "../components/Heading"
@@ -34,6 +33,15 @@ const CareersPage = () => {
             <li>Training and development expenses up to 700 EUR per person per year</li>
             <li>14" Macbook Pro or equivalent and home set up gear</li>
           </ul>
+        </SectionWrapper>
+      </PageContainer>
+
+      <PageContainer>
+        <SectionWrapper hasAlternativeFont isCenter>
+          <Heading theme={3}>Open positions</Heading>
+          <p>If you can’t find the role you are looking for posted, but think you could be a great fit, reach out to us at <a href="mailto:careers@liftr.studio">careers (at) liftr (dot) studio</a></p>
+
+          <CTA to="https://www.linkedin.com/company/liftr/jobs/" importance="secondary" hasArrowIcon>Check our LinkedIn page</CTA>
         </SectionWrapper>
       </PageContainer>
     </Layout>
