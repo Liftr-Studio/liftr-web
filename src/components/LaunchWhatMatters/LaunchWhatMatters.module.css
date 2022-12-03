@@ -6,6 +6,7 @@
 
 .wrapper {
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .wrapper::before {
@@ -24,6 +25,10 @@
 }
 
 @media screen and (min-width: 800px) {
+  .wrapper {
+    margin-bottom: 8rem;
+  }
+
   .content {
     width: 50%;
     padding-right: 4rem;
