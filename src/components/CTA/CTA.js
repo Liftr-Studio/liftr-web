@@ -7,10 +7,10 @@ import {
   ctaPrimary,
   ctaSecondary,
   contentWrapper,
-  iconWrapper
+  iconWrapper,
 } from "./CTA.module.css"
 
-const CTA = ({ children, importance, to, hasArrowIcon }) => {
+const CTA = ({ children, importance, to, hasArrowIcon, ...props }) => {
   const classes = classNames(
     cta,
     {
@@ -19,7 +19,7 @@ const CTA = ({ children, importance, to, hasArrowIcon }) => {
     }
   )
   return (
-    <Link className={classes} to={to}>
+    <Link className={classes} to={to} {...props}>
       <span className={contentWrapper}>
         <span>
           {children}

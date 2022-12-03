@@ -83,5 +83,15 @@ describe("CTA", () => {
       expect(icon.length).toBe(1)
     })
   })
+
+  describe("when other anchor attributes are passed", () => {
+    test("adds them to the anchor", () => {
+      const { container } = render(
+        <CTA to="/test" hasArrowIcon target="_blank">Click Me!</CTA>
+      )
+
+      expect(container.firstChild.getAttribute("target")).toBe("_blank")
+    })
+  })
 })
 
