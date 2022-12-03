@@ -5,6 +5,7 @@ import { Layout } from "../components/Layout"
 import { PageContainer } from "../components/PageContainer"
 import { SectionWrapper } from "../components/SectionWrapper"
 import { LaunchWhatMatters } from "../components/LaunchWhatMatters/LaunchWhatMatters"
+import { CompanyValuesCulture } from "../components/CompanyValuesCulture"
 import {
   utilityCustomUL,
 } from "../components/Layout/Layout.module.css"
@@ -17,6 +18,7 @@ const CareersPage = () => {
   return (
     <Layout>
       <LaunchWhatMatters />
+      <CompanyValuesCulture />
       <PageContainer>
         <SectionWrapper hasAlternativeFont isCenter>
           <Heading theme={2} extraClass={headingLifeAtLiftr}>Life @Liftr</Heading>

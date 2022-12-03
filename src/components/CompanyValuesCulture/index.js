@@ -1,0 +1,1 @@
+export { CompanyValuesCulture } from "./CompanyValuesCulture"

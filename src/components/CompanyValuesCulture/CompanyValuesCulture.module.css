@@ -1,0 +1,32 @@
+.heading {
+  color: var(--theme-colour-1);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100%;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .item {
+    width: 50%;
+  }
+
+  .item:not(:last-child) {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .item {
+    width: 25%;
+  }
+}
