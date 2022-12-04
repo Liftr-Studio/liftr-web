@@ -51,6 +51,11 @@ body {
   box-sizing: border-box;
 }
 
+::selection {
+  color: rgb(255, 255, 255);
+  background: var(--theme-colour-1);
+}
+
 a,
 a:hover,
 a:focus,
