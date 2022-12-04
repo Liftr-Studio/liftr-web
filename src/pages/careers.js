@@ -10,10 +10,12 @@ import { CompanyValuesCulture } from "../components/CompanyValuesCulture"
 import { WhatsInItForYou } from "../components/WhatsInItForYou/WhatsInItForYou"
 import {
   utilityCustomUL,
+  utilityNoWrap,
 } from "../components/Layout/Layout.module.css"
 
 import {
   headingLifeAtLiftr,
+  openPositionsContent,
 } from "./careers.module.css"
 
 const CareersPage = () => {
@@ -44,12 +46,12 @@ const CareersPage = () => {
         </SectionWrapper>
       </PageContainer>
 
-      <PageContainer>
+      <PageContainer isNarrow>
         <SectionWrapper hasAlternativeFont isCenter>
           <Heading theme={3}>Open positions</Heading>
-          <p>If you can’t find the role you are looking for posted, but think you could be a great fit, reach out to us at <a href="mailto:careers@liftr.studio">careers (at) liftr (dot) studio</a></p>
+          <p className={openPositionsContent}>If you can’t find the role you are looking for posted, but think you could be a great fit, reach out to us at <a className={utilityNoWrap} href="mailto:careers@liftr.studio">careers (at) liftr (dot) studio</a></p>
 
-          <CTA to="https://www.linkedin.com/company/liftr/jobs/" importance="secondary" hasArrowIcon>Check our LinkedIn page</CTA>
+          <CTA to="https://www.linkedin.com/company/liftr/jobs/" importance="secondary" hasArrowIcon>See open roles on LinkedIn</CTA>
         </SectionWrapper>
       </PageContainer>
     </Layout>

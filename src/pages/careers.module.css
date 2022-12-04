@@ -1,3 +1,7 @@
 .headingLifeAtLiftr {
   color: var(--theme-colour-1);
 }
+
+.openPositionsContent {
+  margin-bottom: 2rem;
+}
