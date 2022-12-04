@@ -22,7 +22,6 @@ import {
   headingCard1,
   headingLabelCard1,
   card2,
-  headingCard2,
   headingLabelCard2,
 } from "./index.module.css"
 
@@ -58,7 +57,7 @@ const IndexPage = () => {
             <div className={cardWrapper}>
               <Card extraClass={card2}>
                 <Heading importance={3} theme={4} extraClass={headingLabelCard2}>Ion Plan</Heading>
-                <Heading importance={4} theme={5} extraClass={headingCard2}>Product development for equity (coming soon)</Heading>
+                <Heading importance={4} theme={5}>Product development for equity (coming soon)</Heading>
                 <ul className={utilityCustomUL}>
                   <li>We pay for the team that will build your product for a modest equity stake in your business</li>
                   <li>You spend your hard earned investment on building your business</li>
