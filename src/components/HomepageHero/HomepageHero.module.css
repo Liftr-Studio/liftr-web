@@ -4,7 +4,10 @@
 }
 
 .wrapper {
-  background: rgb(0, 34, 119);
+  background-color: rgb(0, 34, 119);
+  background-image: url(../../images/background-hero-homepage.jpg);
+  background-size: cover;
+  background-position: center;
   color: rgb(255, 255, 255);
   position: relative;
   overflow: hidden;
