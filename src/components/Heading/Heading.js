@@ -36,7 +36,7 @@ Heading.propTypes = {
   extraClass: PropTypes.string,
   importance: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
   isCenter: PropTypes.bool,
-  theme: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
+  theme: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7]).isRequired,
 }
 
 Heading.defaultProps = {
