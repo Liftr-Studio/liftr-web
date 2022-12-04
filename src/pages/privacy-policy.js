@@ -1,4 +1,5 @@
 import * as React from "react"
+import { SEO } from "../components/SEO"
 import { Heading } from "../components/Heading"
 import { Layout } from "../components/Layout"
 import { PageContainer } from "../components/PageContainer"
@@ -379,4 +380,4 @@ const PrivacyPolicy = () => {
 
 export default PrivacyPolicy
 
-export const Head = () => <title>Privacy Policy</title>
+export const Head = () => (<SEO title="Privacy Policy" />)

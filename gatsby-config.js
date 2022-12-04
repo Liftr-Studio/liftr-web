@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `liftr`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Liftr Studio`,
+    siteUrl: `https://liftr.studio`,
+    description: `Launch sensational products`,
+    image: `/static/liftr-social-media.jpg`,
+    twitterUsername: `@liftrstudio`,
   },
   plugins: [
     "gatsby-plugin-postcss",

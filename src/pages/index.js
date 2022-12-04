@@ -1,6 +1,7 @@
 import classNames from "classnames"
 import { Link } from "gatsby"
 import * as React from "react"
+import { SEO } from "../components/SEO"
 import { CTA } from "../components/CTA"
 import { Card } from "../components/Card"
 import { Heading } from "../components/Heading"
@@ -111,4 +112,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Liftr Studio</title>
+export const Head = () => (<SEO />)

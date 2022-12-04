@@ -1,4 +1,5 @@
 import * as React from "react"
+import { SEO } from "../components/SEO"
 import { CTA } from "../components/CTA"
 import { Heading } from "../components/Heading"
 import { Layout } from "../components/Layout"
@@ -60,4 +61,4 @@ const CareersPage = () => {
 
 export default CareersPage
 
-export const Head = () => <title>Liftr Studio | Careers</title>
+export const Head = () => (<SEO title="Liftr Studio | Careers" />)
