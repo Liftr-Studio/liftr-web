@@ -1,4 +1,5 @@
 import * as React from "react"
+import { ParallaxProvider } from "react-scroll-parallax";
 import "normalize.css"
 import PropTypes from 'prop-types';
 import { CTA } from "../CTA"
@@ -10,19 +11,23 @@ import { SectionWrapper } from "../SectionWrapper"
 import "./Layout.module.css"
 
 const Layout = ({ children, headerDarkTheme, headerIsOverlapping }) => (
-  <div className="liftr">
-    <Header theme={headerDarkTheme ? "dark" : null} overlap={headerIsOverlapping} />
-    {children}
+  <ParallaxProvider>
+    <div className="liftr">
 
-    <PageContainer isNarrow>
-      <SectionWrapper isCenter>
-        <Heading theme={2} importance={2}>Start your journey with Liftr</Heading>
-        <CTA to="/" hasArrowIcon>Ship products faster</CTA>
-      </SectionWrapper>
-    </PageContainer>
+        <Header theme={headerDarkTheme ? "dark" : null} overlap={headerIsOverlapping} />
 
-    <Footer />
-  </div>
+        {children}
+
+        <PageContainer isNarrow>
+          <SectionWrapper isCenter>
+            <Heading theme={2} importance={2}>Start your journey with Liftr</Heading>
+            <CTA to="/" hasArrowIcon>Ship products faster</CTA>
+          </SectionWrapper>
+        </PageContainer>
+
+        <Footer />
+    </div>
+  </ParallaxProvider>
 )
 
 
