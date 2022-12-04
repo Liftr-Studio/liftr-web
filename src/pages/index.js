@@ -56,7 +56,7 @@ const IndexPage = () => {
                   <li>We help you in-house our expertise at a pace that suits you</li>
                 </ul>
 
-                <Link to="/">Know more</Link>
+                <Link to="mailto:contact@liftr.studio?subject=Business enquiry from the website">Know more</Link>
               </Card>
             </div>
             <div className={cardWrapper}>
@@ -76,7 +76,7 @@ const IndexPage = () => {
 
       <PageContainer isNarrow>
         <SectionWrapper isCenter>
-          <CTA to="/" hasArrowIcon>Ship products faster</CTA>
+          <CTA to="mailto:contact@liftr.studio?subject=Business enquiry from the website" hasArrowIcon>Ship products faster</CTA>
         </SectionWrapper>
       </PageContainer>
 
@@ -102,7 +102,7 @@ const IndexPage = () => {
             <Heading importance={2} theme={3}>Experienced founders</Heading>
             <p>We have spent over 15 years working with, contributing to and helping scale high growth companies. We know what breakneck growth looks like because we lived through it ourselves.</p>
 
-            <Link to="/">Read about the people behind Liftr</Link>
+            <Link to="https://www.linkedin.com/company/liftr/about/" target="_blank">Read about the people behind Liftr</Link>
           </Media>
         </SectionWrapper>
       </PageContainer>

@@ -12,7 +12,7 @@ import {
 import { PageContainer } from "../PageContainer";
 import liftrLogo from "../../images/liftr-logo-dark.svg"
 import footerStar from "../../images/footer-star.svg"
-import twitterLogo from "../../images/social-media/twitter.svg"
+// import twitterLogo from "../../images/social-media/twitter.svg"
 import linkedinLogo from "../../images/social-media/linkedin.svg"
 
 const Footer = () => (
@@ -28,10 +28,10 @@ const Footer = () => (
         </address>
       </div>
       <div className={socialMedia}>
-        <Link to="/" target="_blank" className={socialMediaItem}>
+        {/* <Link to="/" target="_blank" className={socialMediaItem}>
           <img className={socialMediaIcon} src={twitterLogo} alt="Twitter" />
-        </Link>
-        <Link to="/" target="_blank" className={socialMediaItem}>
+        </Link> */}
+        <Link to="https://www.linkedin.com/company/liftr/about/" target="_blank" className={socialMediaItem}>
           <img className={socialMediaIcon} src={linkedinLogo} alt="LinkedIn" />
         </Link>
       </div>

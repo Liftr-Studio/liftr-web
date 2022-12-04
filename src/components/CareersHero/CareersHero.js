@@ -72,7 +72,7 @@ const CareersHero = () => {
         <Heading theme={6} importance={1}>Re-launch your career.</Heading>
         <Heading theme={7} importance={2}>Step into our launch pad.</Heading>
         <p className={subtext}>Join Liftr's mission in launching (customers or projects) into interstellar success. From day 1 the focus is in "we're in it together" and you'll get all the support you need to reach the stars.</p>
-        <CTA to="/contact" importance="secondary" hasArrowIcon>Ship products faster</CTA>
+        <CTA to="mailto:contact@liftr.studio?subject=Business enquiry from the website" importance="secondary" hasArrowIcon>Ship products faster</CTA>
       </div>
       <img src={phoneStar} alt="" className={phoneStarMain} ref={phoneStarMainParallax.ref} />
       <img src={phoneStar} alt="" className={phoneStarLeft} ref={phoneStarLeftParallax.ref} />

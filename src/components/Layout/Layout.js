@@ -24,7 +24,7 @@ const Layout = ({ children, headerDarkTheme, headerIsOverlapping }) => (
         <PageContainer isNarrow extraClass={startJourneySection}>
           <SectionWrapper isCenter>
             <Heading theme={2} importance={2}>Start your journey with Liftr</Heading>
-            <CTA to="/" hasArrowIcon>Ship products faster</CTA>
+            <CTA to="mailto:contact@liftr.studio?subject=Business enquiry from the website" hasArrowIcon>Ship products faster</CTA>
           </SectionWrapper>
         </PageContainer>
 

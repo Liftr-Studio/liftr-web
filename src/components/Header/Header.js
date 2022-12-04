@@ -31,7 +31,7 @@ const Header = ({ overlap, theme }) => {
         <nav className={nav}>
           <Link to="/" className={navItem} activeClassName={navItemActive}>About us</Link>
           <Link to="/careers" className={navItem} activeClassName={navItemActive}>Careers</Link>
-          <Link to="/def" className={navItem} activeClassName={navItemActive}>Get in touch</Link>
+          <Link to="mailto:contact@liftr.studio?subject=Business enquiry from the website" className={navItem} activeClassName={navItemActive}>Get in touch</Link>
         </nav>
       </PageContainer>
     </header>
