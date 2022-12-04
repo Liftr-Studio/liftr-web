@@ -8,17 +8,20 @@ import { Footer } from "../Footer";
 import { Heading } from "../Heading"
 import { PageContainer } from "../PageContainer"
 import { SectionWrapper } from "../SectionWrapper"
-import "./Layout.module.css"
+import {
+  liftr,
+  startJourneySection,
+} from "./Layout.module.css"
 
 const Layout = ({ children, headerDarkTheme, headerIsOverlapping }) => (
   <ParallaxProvider>
-    <div className="liftr">
+    <div className={liftr}>
 
         <Header theme={headerDarkTheme ? "dark" : null} overlap={headerIsOverlapping} />
 
         {children}
 
-        <PageContainer isNarrow>
+        <PageContainer isNarrow extraClass={startJourneySection}>
           <SectionWrapper isCenter>
             <Heading theme={2} importance={2}>Start your journey with Liftr</Heading>
             <CTA to="/" hasArrowIcon>Ship products faster</CTA>

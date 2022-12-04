@@ -50,6 +50,10 @@
   position: absolute;
   left: calc(var(--footer-width-small-screens) - (var(--footer-star-width-small-screens) / 2));
   top: 2rem;
+  transform-origin: top center;
+  animation: footerStarAnimation 10s linear;
+  animation-iteration-count: infinite;
+  z-index: 1;
 }
 
 @media screen and (min-width: 500px) {
@@ -65,4 +69,15 @@
     width: var(--footer-star-width-large-screens);
     left: calc(var(--footer-width-large-screens) - (var(--footer-star-width-large-screens) / 2));
   }
+}
+
+@keyframes footerStarAnimation {
+  0%   { transform: translateY(0); }
+  5%  { transform: translateY(2rem); }
+  15%  { transform: translateY(-10rem) scale(0); }
+  15.1%  { transform: translateY(30rem) scale(0); }
+  15.2%  { transform: translateY(30rem) scale(1); }
+  23%  { transform: translateY(-3rem); }
+  26%  { transform: translateY(1rem); }
+  27%  { transform: translateY(0); }
 }
