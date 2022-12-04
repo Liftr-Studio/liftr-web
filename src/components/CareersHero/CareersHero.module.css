@@ -113,7 +113,7 @@
 
 .star8 {
   left: 35%;
-  top: 0%;
+  top: 5%;
 }
 
 .star9 {
@@ -122,7 +122,7 @@
 }
 
 .star10 {
-  bottom: 95%;
+  top: 0%;
   left: 60%;
 }
 
@@ -152,5 +152,9 @@
 
   .phoneStarRight {
     right: 11vw;
+  }
+
+  .star10 {
+    top: 5%;
   }
 }
