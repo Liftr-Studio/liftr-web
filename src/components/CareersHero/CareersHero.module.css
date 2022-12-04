@@ -1,17 +1,141 @@
+:root {
+  --careersHeroStarMainSize: 23rem;
+  --careersHeroStarLeftSize: 12rem;
+  --careersHeroStarRightSize: 9rem;
+}
+
 .wrapper {
   padding-top: 3.5rem;
+  padding-bottom: 18rem;
   margin-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .content {
   text-align: center;
   max-width: 43rem;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .subtext {
   margin-bottom: 2rem;
 }
+
+/* images */
+.phoneStarMain,
+.phoneStarLeft,
+.phoneStarRight {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: var(--careersHeroStarMainSize);
+  left: calc(50% - (var(--careersHeroStarMainSize) / 2));
+}
+
+.phoneStarLeft {
+  width: var(--careersHeroStarLeftSize);
+  left: calc(var(--careersHeroStarLeftSize) / (-2));
+  bottom: 2rem;
+}
+
+.phoneStarRight {
+  width: var(--careersHeroStarRightSize);
+  left: auto;
+  right: calc(var(--careersHeroStarRightSize) / (-2));
+  bottom: 2rem;
+}
+
+.star {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.starLayer1,
+.starLayer2,
+.starLayer3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.starLayer1 .star {
+  width: 1.5rem;
+}
+
+.starLayer2 .star {
+  width: 1rem;
+}
+
+.starLayer3 .star {
+  width: 0.8rem;
+}
+
+.star1 {
+  bottom: 47%;
+  left: 32%;
+}
+
+.star2 {
+  bottom: 30%;
+  right: 23%;
+}
+
+.star3 {
+  bottom: 80%;
+  right: 5%;
+}
+
+.star4 {
+  bottom: 60%;
+  left: 2%;
+}
+
+.star5 {
+  bottom: 50%;
+  right: 2%;
+}
+
+.star6 {
+  bottom: 65%;
+  right: 35%;
+}
+
+.star7 {
+  bottom: 30%;
+  left: 25%;
+}
+
+.star8 {
+  left: 35%;
+  top: 0%;
+}
+
+.star9 {
+  bottom: 85%;
+  left: 5%;
+}
+
+.star10 {
+  bottom: 95%;
+  left: 60%;
+}
+
+.star11 {
+  left: 10%;
+  bottom: 35%;
+}
+
+.star12 {
+  bottom: 27%;
+  right: 10%;
+}
+
 
 @media screen and (min-width: 600px) {
   .wrapper {
@@ -20,5 +144,13 @@
 
   .subtext {
     margin-bottom: 4rem;
+  }
+
+  .phoneStarLeft {
+    left: 9vw;
+  }
+
+  .phoneStarRight {
+    right: 11vw;
   }
 }
