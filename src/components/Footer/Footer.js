@@ -23,7 +23,6 @@ const Footer = () => (
         <address className={contact}>
           Chat to us<br />
           <a href="mailto:contact@liftr.studio">contact@liftr.studio</a><br />
-          +44 7857 134 634<br />
           <Link to="/privacy-policy">Privacy Policy</Link>
         </address>
       </div>
