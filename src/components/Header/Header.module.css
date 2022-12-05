@@ -18,7 +18,7 @@
   color: var(--theme-colour-2);
   text-decoration: none;
   position: relative;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem;
 }
 
 .themeDark .navItem {
@@ -78,6 +78,10 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 2.75rem;
+  }
+
+  .navItem {
+    padding: 0.25rem 1rem;
   }
 
   .navItem:not(:last-child) {
