@@ -22,8 +22,8 @@ const Footer = () => (
         <img src={liftrLogo} alt="liftr" />
         <address className={contact}>
           Chat to us<br />
-          hi(at)liftr(dot)studio<br />
-          +44 77567 890 900<br />
+          <a href="mailto:contact@liftr.studio">contact@liftr.studio</a><br />
+          +44 7857 134 634<br />
           <Link to="/privacy-policy">Privacy Policy</Link>
         </address>
       </div>

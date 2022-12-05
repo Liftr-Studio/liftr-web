@@ -38,11 +38,11 @@ const CareersPage = () => {
           <Heading theme={3}>Benefits</Heading>
           <ul className={utilityCustomUL}>
             <li>We are a remote first company</li>
-            <li>Holiday: 23 days per year + 1 extra day for each year of tenure (up to a max of 28)</li>
+            <li>Generous holiday allowance</li>
             <li>Participation in our attractive bonus scheme which rewards contribution and commitment</li>
             <li>Comprehensive private health insurance</li>
-            <li>Training and development expenses up to 700 EUR per person per year</li>
-            <li>14" Macbook Pro or equivalent and home set up gear</li>
+            <li>Personalised annual training and personal development allocation</li>
+            <li>Top market gear so you can be productive</li>
           </ul>
         </SectionWrapper>
       </PageContainer>
@@ -50,7 +50,7 @@ const CareersPage = () => {
       <PageContainer isNarrow>
         <SectionWrapper hasAlternativeFont isCenter>
           <Heading theme={3}>Open positions</Heading>
-          <p className={openPositionsContent}>If you can’t find the role you are looking for posted, but think you could be a great fit, reach out to us at <a className={utilityNoWrap} href="mailto:careers@liftr.studio">careers (at) liftr (dot) studio</a></p>
+          <p className={openPositionsContent}>If you can’t find the role you are looking for posted, but think you could be a great fit, reach out to us at <a className={utilityNoWrap} href="mailto:careers@liftr.studio">careers (at) liftr (dot) studio</a>.</p>
 
           <CTA to="https://www.linkedin.com/company/liftr/jobs/" importance="secondary" hasArrowIcon>See open roles on LinkedIn</CTA>
         </SectionWrapper>

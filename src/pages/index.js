@@ -55,8 +55,6 @@ const IndexPage = () => {
                   <li>You pay for what you actually need, every team we build is custom</li>
                   <li>We help you in-house our expertise at a pace that suits you</li>
                 </ul>
-
-                <Link to="mailto:contact@liftr.studio?subject=Business enquiry from the website">Know more</Link>
               </Card>
             </div>
             <div className={cardWrapper}>

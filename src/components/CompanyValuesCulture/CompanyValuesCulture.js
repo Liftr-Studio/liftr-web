@@ -19,7 +19,7 @@ const CompanyValuesCulture = () => (
         </div>
         <div className={item}>
           <Heading importance={3} theme={3}>Community first</Heading>
-          <p>Products are built by teams not individuals</p>
+          <p>Products are built by teams not individuals.</p>
         </div>
         <div className={item}>
           <Heading importance={3} theme={3}>Authentic ownership</Heading>
@@ -27,7 +27,7 @@ const CompanyValuesCulture = () => (
         </div>
         <div className={item}>
           <Heading importance={3} theme={3}>Love your craft</Heading>
-          <p>We do our best when we love what we do</p>
+          <p>We do our best when we love what we do.</p>
         </div>
       </div>
     </SectionWrapper>
