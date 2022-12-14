@@ -100,7 +100,7 @@ const IndexPage = () => {
             <Heading importance={2} theme={3}>Experienced founders</Heading>
             <p>We have spent over 15 years working with, contributing to and helping scale high growth companies. We know what breakneck growth looks like because we lived through it ourselves.</p>
 
-            <Link to="https://www.linkedin.com/company/liftr/about/" target="_blank">Read about the people behind Liftr</Link>
+            <Link to="/about">Read about the people behind Liftr</Link>
           </Media>
         </SectionWrapper>
       </PageContainer>

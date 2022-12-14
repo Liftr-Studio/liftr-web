@@ -18,7 +18,7 @@
   color: var(--theme-colour-2);
   text-decoration: none;
   position: relative;
-  padding: 0.25rem;
+  padding: 0.25rem 0;
 }
 
 .themeDark .navItem {
@@ -68,7 +68,6 @@
   }
 
   .navItem {
-    flex: 1 1 0;
     text-align: center;
   }
 }
