@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Liftr Studio`,
-    siteUrl: `https://liftr.studio`,
+    siteUrl: `https://www.liftr.studio`,
     description: `Launch sensational products`,
     image: `/static/liftr-social-media.jpg`,
     twitterUsername: `@liftrstudio`,
