@@ -21,7 +21,7 @@ const HomepageHero = () => (
       <div className={content}>
         <Heading theme={1} importance={1}>Launch sensational products</Heading>
         <p className={subtext}>We build high performance cross functional product, engineering and design teams for venture backed startups in e-commerce and financial services.</p>
-        <CTA to="mailto:contact@liftr.studio?subject=Business enquiry from the website" hasArrowIcon>Ship products faster</CTA>
+        <CTA to="/contact" hasArrowIcon>Ship products faster</CTA>
       </div>
       <div className={star}>
         <img className={starBlue} src={liftrStarLightBlue} alt="" />

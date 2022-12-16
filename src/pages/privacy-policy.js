@@ -2,18 +2,18 @@ import * as React from "react"
 import { SEO } from "../components/SEO"
 import { Heading } from "../components/Heading"
 import { Layout } from "../components/Layout"
-import { PageContainer } from "../components/PageContainer"
 import { SectionWrapper } from "../components/SectionWrapper"
+import { ParallaxHero } from "../components/ParallaxHero";
 import { letterList, romanNumeralsList, table } from './privacy-policy.module.css'
 
 
 const PrivacyPolicy = () => {
   return (
     <Layout>
-      <PageContainer>
-        <SectionWrapper>
-          <Heading importance={1} theme={2} isCenter>Website Policy</Heading>
+      <ParallaxHero>
+        <Heading theme={7} importance={1} isCenter>Website Policy</Heading>
 
+        <SectionWrapper>
           <Heading importance={2} theme={5}>Introduction</Heading>
 
           <p>Welcome on https://www.liftr.studio. By continuing to use this website you are agreeing to comply with and be bound by the following terms and conditions (the “Terms and Conditions”). The term “you” refers to the user or viewer of our Website, whether as a guest or otherwise. Use of our Website includes accessing, browsing, or registering to use our Website.</p>
@@ -373,7 +373,7 @@ const PrivacyPolicy = () => {
 
           <p>Our website may contain links to third party websites. If you click and follow those links then these will take you to the third party website. Those third party websites may collect personal information from you and you will need to check their privacy notices to understand how your personal information is collected and used by them.</p>
         </SectionWrapper>
-      </PageContainer>
+      </ParallaxHero>
     </Layout>
   )
 }

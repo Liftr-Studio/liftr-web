@@ -1,19 +1,22 @@
 import * as React from "react"
 import { SEO } from "../components/SEO"
 import { Layout } from "../components/Layout"
-import { PageContainer } from "../components/PageContainer"
+import { ParallaxHero } from "../components/ParallaxHero";
 import { SectionWrapper } from "../components/SectionWrapper"
 import { Heading } from "../components/Heading"
 import { Media } from "../components/Media"
 import claudiuImage from "../images/about-us/claudiu.jpg"
 import sebImage from "../images/about-us/seb.jpg"
+import {
+  utilityExtraMarginBottom
+} from "../components/Layout/Layout.module.css"
 
 const AboutPage = () => {
   return (
     <Layout>
-      <PageContainer>
+      <ParallaxHero>
         <SectionWrapper>
-          <Heading theme={7} importance={1} isCenter>Liftr’s Leadership team</Heading>
+          <Heading theme={7} importance={1} isCenter extraClass={utilityExtraMarginBottom}>Liftr’s Leadership team</Heading>
 
           <Media image={claudiuImage}>
             <Heading importance={2} theme={3}>Claudiu Udrea (CEO)</Heading>
@@ -25,7 +28,7 @@ const AboutPage = () => {
             <p>Sebastian is a passionate technologist with 20 years of experience building and running motivated  engineering teams that build great products. He has worked in both large organisations like Google or Amdocs as well as scale-up unicorns like Funding Circle, Depop/Etsy helping them build highly productive teams in the US, UK, Germany, India, Malaysia and other countries.</p>
           </Media>
         </SectionWrapper>
-      </PageContainer>
+      </ParallaxHero>
     </Layout>
   )
 }

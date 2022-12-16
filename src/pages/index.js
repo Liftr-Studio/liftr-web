@@ -74,7 +74,7 @@ const IndexPage = () => {
 
       <PageContainer isNarrow>
         <SectionWrapper isCenter>
-          <CTA to="mailto:contact@liftr.studio?subject=Business enquiry from the website" hasArrowIcon>Ship products faster</CTA>
+          <CTA to="/contact" hasArrowIcon>Ship products faster</CTA>
         </SectionWrapper>
       </PageContainer>
 
