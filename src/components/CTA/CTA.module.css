@@ -18,6 +18,7 @@
 .contentWrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .iconWrapper {
@@ -28,6 +29,13 @@
 .iconWrapper > svg {
   display: block;
   width: 100%;
+}
+
+.ctaSizeLarge {
+  --padding-vertical: 1.5rem;
+  line-height: var(--font-size-emphasis);
+  font-size: var(--font-size-emphasis);
+  border-radius: calc(var(--padding-vertical) * 2 + var(--font-size-emphasis));
 }
 
 .ctaPrimary {
@@ -48,6 +56,17 @@
 
 .ctaSecondary:hover {
   border-color: var(--theme-colour-2);
+}
+
+.ctaTertiary {
+  background-color: var(--theme-colour-1);
+  color: rgb(255, 255, 255)!important;
+  transition: all 200ms ease;
+}
+
+.ctaTertiary:hover {
+  background-color: var(--theme-colour-5);
+  color: var(--theme-colour-2)!important;
 }
 
 .cta:hover .iconWrapper {

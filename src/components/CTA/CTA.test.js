@@ -48,6 +48,15 @@ describe("CTA", () => {
         expect(container.firstChild.classList.contains("ctaSecondary")).toBeTruthy()
       })
     })
+
+    describe("and the value is tertiary", () => {
+      test("has the tertiary importance class", () => {
+        const { container} = render(
+          <CTA to="/test" importance="tertiary">Click Me!</CTA>
+        )
+        expect(container.firstChild.classList.contains("ctaTertiary")).toBeTruthy()
+      })
+    })
   })
 
   describe("when hasArrowIcon is not passed", () => {
@@ -91,6 +100,70 @@ describe("CTA", () => {
       )
 
       expect(container.firstChild.getAttribute("target")).toBe("_blank")
+    })
+  })
+
+  describe("when no tag is passed", () => {
+    test("renders an anchor", () => {
+      const { container } = render(
+        <CTA to="/test">Click Me!</CTA>
+      )
+
+      expect(container.firstChild.tagName).toBe("A")
+    })
+  })
+
+  describe("when the tag prop is passed", () => {
+    describe("and the value is anchor", () => {
+      test("renders an anchor", () => {
+        const { container } = render(
+          <CTA to="/test" tag="anchor">Click Me!</CTA>
+        )
+
+        expect(container.firstChild.tagName).toBe("A")
+      })
+    })
+
+    describe("and the value is button", () => {
+      test("renders a button", () => {
+        const { container } = render(
+          <CTA to="/test" tag="button">Click Me!</CTA>
+        )
+
+        expect(container.firstChild.tagName).toBe("BUTTON")
+      })
+    })
+  })
+
+  describe("when the extraClass prop is passed", () => {
+    test("adds the extra class on the wrapper", () => {
+      const { container } = render(<CTA to="/test" extraClass="extraCustomClass">Click Me!</CTA>)
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('extraCustomClass')).toBeTruthy()
+    })
+
+    test("keeps the original class on the wrapper", () => {
+      const { container } = render(<CTA to="/test" extraClass="extraCustomClass">Click Me!</CTA>)
+
+      const elClassList = container.firstChild.classList
+
+      expect(elClassList.contains('cta')).toBeTruthy()
+      expect(elClassList.contains('ctaPrimary')).toBeTruthy()
+    })
+  })
+
+  describe("when the size prop is passed", () => {
+    describe("and the value is large", () => {
+      test("adds the a large class on the wrapper", () => {
+        const { container } = render(<CTA to="/test" size="large">Click Me!</CTA>)
+
+        const elClassList = container.firstChild.classList
+
+        expect(elClassList.contains('ctaSizeLarge')).toBeTruthy()
+      })
+
     })
   })
 })
