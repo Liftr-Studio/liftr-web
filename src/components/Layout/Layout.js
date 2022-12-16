@@ -13,7 +13,7 @@ import {
   startJourneySection,
 } from "./Layout.module.css"
 
-const Layout = ({ children, headerDarkTheme, headerIsOverlapping }) => (
+const Layout = ({ children, showContact, headerDarkTheme, headerIsOverlapping }) => (
   <ParallaxProvider>
     <div className={liftr}>
 
@@ -21,13 +21,14 @@ const Layout = ({ children, headerDarkTheme, headerIsOverlapping }) => (
 
         {children}
 
-        <PageContainer isNarrow extraClass={startJourneySection}>
-          <SectionWrapper isCenter>
-            <Heading theme={2} importance={2}>Start your journey with Liftr</Heading>
-            <CTA to="mailto:contact@liftr.studio?subject=Business enquiry from the website" hasArrowIcon>Ship products faster</CTA>
-          </SectionWrapper>
-        </PageContainer>
-
+        {showContact && (
+          <PageContainer isNarrow extraClass={startJourneySection}>
+            <SectionWrapper isCenter>
+              <Heading theme={2} importance={2}>Start your journey with Liftr</Heading>
+              <CTA to="/contact" hasArrowIcon>Ship products faster</CTA>
+            </SectionWrapper>
+          </PageContainer>
+        )}
         <Footer />
     </div>
   </ParallaxProvider>
@@ -41,11 +42,13 @@ Layout.propTypes = {
   ]).isRequired,
   headerDarkTheme: PropTypes.bool,
   headerIsOverlapping: PropTypes.bool,
+  showContact: PropTypes.bool,
 }
 
 Layout.defaultProps = {
   headerDarkTheme: false,
   headerIsOverlapping: false,
+  showContact: true,
 }
 
 export { Layout }
