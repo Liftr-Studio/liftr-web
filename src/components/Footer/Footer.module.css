@@ -1,7 +1,7 @@
 :root {
   --footer-width-small-screens: 70%;
   --footer-width-large-screens: 50%;
-  --footer-star-width-small-screens: 12rem;
+  --footer-star-width-small-screens: 10rem;
   --footer-star-width-large-screens: 18rem;
 }
 
@@ -10,7 +10,7 @@
   font-weight: var(--font-weight-x-thin);
   font-size: var(--font-size-large);
   line-height: var(--line-height-large);
-  padding: 12rem 0 8rem;
+  padding: 12rem 0 10rem;
   overflow: hidden;
 }
 
@@ -50,7 +50,7 @@
   width: var(--footer-star-width-small-screens);
   position: absolute;
   left: calc(var(--footer-width-small-screens) - (var(--footer-star-width-small-screens) / 2));
-  top: 5rem;
+  top: 9rem;
   transform-origin: top center;
   animation: footerStarAnimation 10s linear;
   animation-iteration-count: infinite;
@@ -69,15 +69,17 @@
   .star {
     width: var(--footer-star-width-large-screens);
     left: calc(var(--footer-width-large-screens) - (var(--footer-star-width-large-screens) / 2));
+    top: 4rem;
   }
 }
 
 @keyframes footerStarAnimation {
   0%   { transform: translateY(0); }
   5%  { transform: translateY(2rem); }
-  15%  { transform: translateY(-35rem) scale(1); }
-  15.1%  { transform: translateY(60rem) scale(0); }
-  15.2%  { transform: translateY(30rem) scale(1); }
+  15%  { transform: translateY(-43rem) scale(1); }
+  15.1%  { transform: translateY(-43rem) scale(0); }
+  15.2%  { transform: translateY(60rem) scale(0); }
+  15.3%  { transform: translateY(30rem) scale(1); }
   23%  { transform: translateY(-3rem); }
   26%  { transform: translateY(1rem); }
   27%  { transform: translateY(0); }
