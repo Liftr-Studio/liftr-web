@@ -26,7 +26,7 @@ module.exports = {
         short_name: "Liftr Studio",
         start_url: `/`,
         background_color: "rgb(254, 82, 82)",
-        theme_color: "rgb(147, 198, 0)",
+        theme_color: "rgb(0, 34, 119)",
       },
     },
   ]
