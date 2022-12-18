@@ -11,6 +11,8 @@ import { SectionWrapper } from "../SectionWrapper"
 import {
   liftr,
   startJourneySection,
+  startJourneySectionWrapper,
+  startJournetyCTA,
 } from "./Layout.module.css"
 
 const Layout = ({ children, showContact, headerDarkTheme, headerIsOverlapping }) => (
@@ -23,9 +25,9 @@ const Layout = ({ children, showContact, headerDarkTheme, headerIsOverlapping })
 
         {showContact && (
           <PageContainer isNarrow extraClass={startJourneySection}>
-            <SectionWrapper isCenter>
+            <SectionWrapper isCenter extraClass={startJourneySectionWrapper}>
               <Heading theme={2} importance={2}>Start your journey with Liftr</Heading>
-              <CTA to="/contact" hasArrowIcon>Ship products faster</CTA>
+              <CTA to="/contact" hasArrowIcon extraClass={startJournetyCTA}>Ship products faster</CTA>
             </SectionWrapper>
           </PageContainer>
         )}

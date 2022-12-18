@@ -13,6 +13,7 @@ import {
   ctaCustom,
   errorWrapper,
   formWrapper,
+  sectionWrapper,
 } from "./contact.module.css"
 import { Heading } from "../components/Heading";
 
@@ -40,7 +41,7 @@ const ContactPage = () => {
           <p>Launch or scale your product with Liftr by telling us a bit about how we can help.</p>
         </div>
 
-        <SectionWrapper isCenter hasAlternativeFont>
+        <SectionWrapper isCenter hasAlternativeFont extraClass={sectionWrapper}>
           {
             (submitResult === "success") ? (
               <div>

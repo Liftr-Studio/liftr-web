@@ -6,6 +6,7 @@
 .ctaCustom {
   display: block;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .errorWrapper {
@@ -18,4 +19,8 @@
   text-align: left;
   font-size: var(--font-size-normal);
   line-height: var(--line-height-default);
+}
+
+.sectionWrapper {
+  padding-bottom: 0;
 }
